@@ -1,0 +1,1428 @@
+13 labeled  classes are found
+        B-A : 29
+        B-B : 179
+        B-C : 500
+        B-F : 834
+        B-M : 306
+        B-Y : 11
+        I-A : 74
+        I-B : 324
+        I-C : 695
+        I-F : 1344
+        I-M : 387
+        I-Y : 15
+          O : 65477
+
+
+Learning B-A vs B-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   208 examples, cache size: 416
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 205 iterations
+
+Number of SVs (BSVs)		76 (0)
+Empirical Risk:			0 (0/208)
+L1 Loss:			0
+Object value:			-0.00180473
+CPU Time:			00:00:00
+
+
+Learning B-A vs B-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   529 examples, cache size: 1058
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 327 iterations
+
+Number of SVs (BSVs)		82 (0)
+Empirical Risk:			0 (0/529)
+L1 Loss:			0
+Object value:			-0.0061737
+CPU Time:			00:00:00
+
+
+Learning B-A vs B-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   863 examples, cache size: 1470
+.....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 255 iterations
+
+Number of SVs (BSVs)		90 (0)
+Empirical Risk:			0 (0/863)
+L1 Loss:			0
+Object value:			-0.00194861
+CPU Time:			00:00:00
+
+
+Learning B-A vs B-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   335 examples, cache size: 670
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 233 iterations
+
+Number of SVs (BSVs)		77 (0)
+Empirical Risk:			0 (0/335)
+L1 Loss:			0
+Object value:			-0.0020664
+CPU Time:			00:00:00
+
+
+Learning B-A vs B-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+    40 examples, cache size: 80
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 69 iterations
+
+Number of SVs (BSVs)		24 (0)
+Empirical Risk:			0 (0/40)
+L1 Loss:			0
+Object value:			-0.00123897
+CPU Time:			00:00:00
+
+
+Learning B-A vs I-A 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   103 examples, cache size: 206
+...
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 190 iterations
+
+Number of SVs (BSVs)		59 (0)
+Empirical Risk:			0 (0/103)
+L1 Loss:			0
+Object value:			-0.00126942
+CPU Time:			00:00:00
+
+
+Learning B-A vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   353 examples, cache size: 706
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 358 iterations
+
+Number of SVs (BSVs)		138 (0)
+Empirical Risk:			0 (0/353)
+L1 Loss:			0
+Object value:			-0.0012634
+CPU Time:			00:00:00
+
+
+Learning B-A vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   724 examples, cache size: 1448
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 380 iterations
+
+Number of SVs (BSVs)		148 (0)
+Empirical Risk:			0 (0/724)
+L1 Loss:			0
+Object value:			-0.00139565
+CPU Time:			00:00:00
+
+
+Learning B-A vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1373 examples, cache size: 1754
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 405 iterations
+
+Number of SVs (BSVs)		190 (0)
+Empirical Risk:			0 (0/1373)
+L1 Loss:			0
+Object value:			-0.00132241
+CPU Time:			00:00:00
+
+
+Learning B-A vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   416 examples, cache size: 832
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 386 iterations
+
+Number of SVs (BSVs)		167 (0)
+Empirical Risk:			0 (0/416)
+L1 Loss:			0
+Object value:			-0.00125229
+CPU Time:			00:00:00
+
+
+Learning B-A vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+    44 examples, cache size: 88
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 94 iterations
+
+Number of SVs (BSVs)		34 (0)
+Empirical Risk:			0 (0/44)
+L1 Loss:			0
+Object value:			-0.000908594
+CPU Time:			00:00:00
+
+
+Learning B-A vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65506 examples, cache size: 584
+............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 628 iterations
+
+Number of SVs (BSVs)		206 (0)
+Empirical Risk:			0 (0/65506)
+L1 Loss:			0
+Object value:			-0.00677001
+CPU Time:			00:00:03
+
+
+Learning B-B vs B-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   679 examples, cache size: 1358
+....................   1000    679  1358 0.0220  81.5%  81.5%
+....................   2000    678  1358 0.0012  99.4%  90.4%
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2085 iterations
+
+Number of SVs (BSVs)		378 (2)
+Empirical Risk:			0.00147275 (1/679)
+L1 Loss:			2
+Object value:			-2.07295
+CPU Time:			00:00:00
+
+
+Learning B-B vs B-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1013 examples, cache size: 1530
+....................   1000   1013  1530 0.0377  78.1%  78.0%
+....................   2000   1013  1530 0.0048  99.2%  88.6%
+.............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2683 iterations
+
+Number of SVs (BSVs)		442 (0)
+Empirical Risk:			0 (0/1013)
+L1 Loss:			0
+Object value:			-0.0985129
+CPU Time:			00:00:00
+
+
+Learning B-B vs B-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   485 examples, cache size: 970
+....................   1000    485   970 0.0037  85.8%  85.8%
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1324 iterations
+
+Number of SVs (BSVs)		281 (0)
+Empirical Risk:			0 (0/485)
+L1 Loss:			0
+Object value:			-0.0408345
+CPU Time:			00:00:00
+
+
+Learning B-B vs B-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   190 examples, cache size: 380
+...
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 200 iterations
+
+Number of SVs (BSVs)		70 (0)
+Empirical Risk:			0 (0/190)
+L1 Loss:			0
+Object value:			-0.00353494
+CPU Time:			00:00:00
+
+
+Learning B-B vs I-A 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   253 examples, cache size: 506
+.........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 457 iterations
+
+Number of SVs (BSVs)		129 (0)
+Empirical Risk:			0 (0/253)
+L1 Loss:			0
+Object value:			-0.00288547
+CPU Time:			00:00:00
+
+
+Learning B-B vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   503 examples, cache size: 1006
+................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 833 iterations
+
+Number of SVs (BSVs)		245 (0)
+Empirical Risk:			0 (0/503)
+L1 Loss:			0
+Object value:			-0.00335547
+CPU Time:			00:00:00
+
+
+Learning B-B vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   874 examples, cache size: 1473
+.................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 869 iterations
+
+Number of SVs (BSVs)		282 (0)
+Empirical Risk:			0 (0/874)
+L1 Loss:			0
+Object value:			-0.00384535
+CPU Time:			00:00:00
+
+
+Learning B-B vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1523 examples, cache size: 1867
+...................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 994 iterations
+
+Number of SVs (BSVs)		341 (0)
+Empirical Risk:			0 (0/1523)
+L1 Loss:			0
+Object value:			-0.00364169
+CPU Time:			00:00:00
+
+
+Learning B-B vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   566 examples, cache size: 1132
+...............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 789 iterations
+
+Number of SVs (BSVs)		261 (0)
+Empirical Risk:			0 (0/566)
+L1 Loss:			0
+Object value:			-0.00344008
+CPU Time:			00:00:00
+
+
+Learning B-B vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   194 examples, cache size: 388
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 245 iterations
+
+Number of SVs (BSVs)		95 (0)
+Empirical Risk:			0 (0/194)
+L1 Loss:			0
+Object value:			-0.00176397
+CPU Time:			00:00:00
+
+
+Learning B-B vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65656 examples, cache size: 581
+....................   1000  65656   581 0.0055  64.8%  64.8%
+.............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1655 iterations
+
+Number of SVs (BSVs)		756 (0)
+Empirical Risk:			0 (0/65656)
+L1 Loss:			0
+Object value:			-0.00818078
+CPU Time:			00:00:18
+
+
+Learning B-C vs B-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1334 examples, cache size: 1727
+....................   1000   1334  1727 2.0666  89.5%  89.5%
+....................   2000   1334  1727 2.0666 100.0%  94.7%
+....................   3000   1334  1727 2.0666 100.0%  96.5%
+....................   4000   1334  1727 2.0908  95.2%  96.2%
+....................   5000   1334  1727 2.0908 100.0%  96.9%
+....................   6000   1334  1727 2.0908 100.0%  97.4%
+....................   7000   1334  1727 0.8461  82.5%  95.3%
+....................   8000   1333  1727 0.1913  91.0%  94.8%
+....................   9000   1323  1727 0.0620  97.6%  95.1%
+....................  10000   1298  1727 0.0212  99.1%  95.5%
+....................  11000   1244  1727 0.0083  99.8%  95.9%
+....................  12000   1188  1767 0.0049  99.8%  96.2%
+....................  13000   1130  1767 0.0017  99.9%  96.5%
+..............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 13727 iterations
+
+Number of SVs (BSVs)		899 (7)
+Empirical Risk:			0.0029985 (4/1334)
+L1 Loss:			8.00073
+Object value:			-8.37651
+CPU Time:			00:00:00
+
+
+Learning B-C vs B-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   806 examples, cache size: 1456
+....................   1000    806  1456 0.0389  78.9%  78.8%
+....................   2000    806  1456 0.0021  99.8%  89.3%
+.....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2260 iterations
+
+Number of SVs (BSVs)		425 (0)
+Empirical Risk:			0 (0/806)
+L1 Loss:			0
+Object value:			-0.113042
+CPU Time:			00:00:00
+
+
+Learning B-C vs B-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   511 examples, cache size: 1022
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 221 iterations
+
+Number of SVs (BSVs)		85 (0)
+Empirical Risk:			0 (0/511)
+L1 Loss:			0
+Object value:			-0.00432961
+CPU Time:			00:00:00
+
+
+Learning B-C vs I-A 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   574 examples, cache size: 1148
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 415 iterations
+
+Number of SVs (BSVs)		154 (0)
+Empirical Risk:			0 (0/574)
+L1 Loss:			0
+Object value:			-0.00305117
+CPU Time:			00:00:00
+
+
+Learning B-C vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   824 examples, cache size: 1460
+................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 835 iterations
+
+Number of SVs (BSVs)		289 (0)
+Empirical Risk:			0 (0/824)
+L1 Loss:			0
+Object value:			-0.00372384
+CPU Time:			00:00:00
+
+
+Learning B-C vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1195 examples, cache size: 1633
+....................   1000   1195  1633 0.0011  82.6%  82.5%
+
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1017 iterations
+
+Number of SVs (BSVs)		345 (0)
+Empirical Risk:			0 (0/1195)
+L1 Loss:			0
+Object value:			-0.00427665
+CPU Time:			00:00:00
+
+
+Learning B-C vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1844 examples, cache size: 2128
+...................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 999 iterations
+
+Number of SVs (BSVs)		388 (0)
+Empirical Risk:			0 (0/1844)
+L1 Loss:			0
+Object value:			-0.00410964
+CPU Time:			00:00:00
+
+
+Learning B-C vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   887 examples, cache size: 1478
+.................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 899 iterations
+
+Number of SVs (BSVs)		335 (0)
+Empirical Risk:			0 (0/887)
+L1 Loss:			0
+Object value:			-0.00376696
+CPU Time:			00:00:00
+
+
+Learning B-C vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   515 examples, cache size: 1030
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 337 iterations
+
+Number of SVs (BSVs)		148 (0)
+Empirical Risk:			0 (0/515)
+L1 Loss:			0
+Object value:			-0.00188057
+CPU Time:			00:00:00
+
+
+Learning B-C vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65977 examples, cache size: 579
+....................   1000  65977   579 0.0115  54.2%  54.2%
+....................   2000  65977   579 0.0021  52.5%  53.4%
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2448 iterations
+
+Number of SVs (BSVs)		1064 (0)
+Empirical Risk:			0 (0/65977)
+L1 Loss:			0
+Object value:			-0.0110364
+CPU Time:			00:00:45
+
+
+Learning B-F vs B-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1140 examples, cache size: 1599
+....................   1000   1140  1599 2.1434  91.4%  91.3%
+....................   2000   1140  1599 2.2830  99.9%  95.6%
+....................   3000   1140  1599 2.2732  99.2%  96.8%
+....................   4000   1140  1599 2.1956  99.2%  97.4%
+....................   5000   1140  1599 2.1956 100.0%  97.9%
+....................   6000   1140  1599 2.0904  99.9%  98.3%
+....................   7000   1140  1599 2.0904 100.0%  98.5%
+....................   8000   1140  1599 2.3008  99.8%  98.7%
+....................   9000   1140  1599 2.3008 100.0%  98.8%
+....................  10000   1140  1599 2.2944  99.0%  98.8%
+....................  11000   1140  1599 2.2944 100.0%  98.9%
+....................  12000   1140  1599 2.3389  99.3%  99.0%
+....................  13000   1140  1599 2.3389 100.0%  99.0%
+....................  14000   1140  1599 2.2214  99.9%  99.1%
+....................  15000   1140  1599 2.4764  99.9%  99.2%
+....................  16000   1140  1599 2.4764 100.0%  99.2%
+....................  17000   1140  1599 0.3076  93.1%  98.9%
+....................  18000   1139  1599 0.0155  93.8%  98.6%
+....................  19000   1110  1599 0.0022  99.5%  98.6%
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 19343 iterations
+
+Number of SVs (BSVs)		516 (37)
+Empirical Risk:			0.0166667 (19/1140)
+L1 Loss:			38.0007
+Object value:			-38.0873
+CPU Time:			00:00:00
+
+
+Learning B-F vs B-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   845 examples, cache size: 1465
+.....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 274 iterations
+
+Number of SVs (BSVs)		108 (0)
+Empirical Risk:			0 (0/845)
+L1 Loss:			0
+Object value:			-0.00348876
+CPU Time:			00:00:00
+
+
+Learning B-F vs I-A 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   908 examples, cache size: 1485
+...........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 580 iterations
+
+Number of SVs (BSVs)		188 (0)
+Empirical Risk:			0 (0/908)
+L1 Loss:			0
+Object value:			-0.00316685
+CPU Time:			00:00:00
+
+
+Learning B-F vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1158 examples, cache size: 1610
+...................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 974 iterations
+
+Number of SVs (BSVs)		344 (0)
+Empirical Risk:			0 (0/1158)
+L1 Loss:			0
+Object value:			-0.00366894
+CPU Time:			00:00:00
+
+
+Learning B-F vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1529 examples, cache size: 1871
+....................   1000   1529  1871 0.0014  79.4%  79.3%
+..
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1116 iterations
+
+Number of SVs (BSVs)		410 (0)
+Empirical Risk:			0 (0/1529)
+L1 Loss:			0
+Object value:			-0.00416915
+CPU Time:			00:00:00
+
+
+Learning B-F vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  2178 examples, cache size: 2418
+....................   1000   2178  2418 0.0019  77.8%  77.8%
+...
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1170 iterations
+
+Number of SVs (BSVs)		444 (0)
+Empirical Risk:			0 (0/2178)
+L1 Loss:			0
+Object value:			-0.00398372
+CPU Time:			00:00:00
+
+
+Learning B-F vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1221 examples, cache size: 1650
+....................   1000   1221  1650 0.0015  79.2%  79.2%
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1064 iterations
+
+Number of SVs (BSVs)		414 (0)
+Empirical Risk:			0 (0/1221)
+L1 Loss:			0
+Object value:			-0.00367383
+CPU Time:			00:00:00
+
+
+Learning B-F vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   849 examples, cache size: 1466
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 396 iterations
+
+Number of SVs (BSVs)		183 (0)
+Empirical Risk:			0 (0/849)
+L1 Loss:			0
+Object value:			-0.00186796
+CPU Time:			00:00:00
+
+
+Learning B-F vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 66311 examples, cache size: 576
+....................   1000  66311   576 0.0134  53.4%  53.4%
+....................   2000  66311   576 0.0030  49.6%  51.5%
+.............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2659 iterations
+
+Number of SVs (BSVs)		1105 (0)
+Empirical Risk:			0 (0/66311)
+L1 Loss:			0
+Object value:			-0.00925054
+CPU Time:			00:00:46
+
+
+Learning B-M vs B-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   317 examples, cache size: 634
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 226 iterations
+
+Number of SVs (BSVs)		81 (0)
+Empirical Risk:			0 (0/317)
+L1 Loss:			0
+Object value:			-0.00441534
+CPU Time:			00:00:00
+
+
+Learning B-M vs I-A 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   380 examples, cache size: 760
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 396 iterations
+
+Number of SVs (BSVs)		138 (0)
+Empirical Risk:			0 (0/380)
+L1 Loss:			0
+Object value:			-0.00278564
+CPU Time:			00:00:00
+
+
+Learning B-M vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   630 examples, cache size: 1260
+...............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 767 iterations
+
+Number of SVs (BSVs)		273 (0)
+Empirical Risk:			0 (0/630)
+L1 Loss:			0
+Object value:			-0.00347945
+CPU Time:			00:00:00
+
+
+Learning B-M vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1001 examples, cache size: 1524
+................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 834 iterations
+
+Number of SVs (BSVs)		305 (0)
+Empirical Risk:			0 (0/1001)
+L1 Loss:			0
+Object value:			-0.00393736
+CPU Time:			00:00:00
+
+
+Learning B-M vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1650 examples, cache size: 1967
+.................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 895 iterations
+
+Number of SVs (BSVs)		365 (0)
+Empirical Risk:			0 (0/1650)
+L1 Loss:			0
+Object value:			-0.00377461
+CPU Time:			00:00:00
+
+
+Learning B-M vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   693 examples, cache size: 1386
+...............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 786 iterations
+
+Number of SVs (BSVs)		287 (0)
+Empirical Risk:			0 (0/693)
+L1 Loss:			0
+Object value:			-0.00351956
+CPU Time:			00:00:00
+
+
+Learning B-M vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   321 examples, cache size: 642
+.....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 257 iterations
+
+Number of SVs (BSVs)		115 (0)
+Empirical Risk:			0 (0/321)
+L1 Loss:			0
+Object value:			-0.00180548
+CPU Time:			00:00:00
+
+
+Learning B-M vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65783 examples, cache size: 580
+....................   1000  65783   580 0.0092  59.8%  59.8%
+....................   2000  65783   580 0.0012  63.6%  61.7%
+
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2014 iterations
+
+Number of SVs (BSVs)		879 (0)
+Empirical Risk:			0 (0/65783)
+L1 Loss:			0
+Object value:			-0.00892316
+CPU Time:			00:00:27
+
+
+Learning B-Y vs I-A 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+    85 examples, cache size: 170
+...
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 160 iterations
+
+Number of SVs (BSVs)		53 (0)
+Empirical Risk:			0 (0/85)
+L1 Loss:			0
+Object value:			-0.00133882
+CPU Time:			00:00:00
+
+
+Learning B-Y vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   335 examples, cache size: 670
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 302 iterations
+
+Number of SVs (BSVs)		123 (0)
+Empirical Risk:			0 (0/335)
+L1 Loss:			0
+Object value:			-0.00147031
+CPU Time:			00:00:00
+
+
+Learning B-Y vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   706 examples, cache size: 1412
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 304 iterations
+
+Number of SVs (BSVs)		136 (0)
+Empirical Risk:			0 (0/706)
+L1 Loss:			0
+Object value:			-0.00159595
+CPU Time:			00:00:00
+
+
+Learning B-Y vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1355 examples, cache size: 1741
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 381 iterations
+
+Number of SVs (BSVs)		196 (0)
+Empirical Risk:			0 (0/1355)
+L1 Loss:			0
+Object value:			-0.00154741
+CPU Time:			00:00:00
+
+
+Learning B-Y vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   398 examples, cache size: 796
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 313 iterations
+
+Number of SVs (BSVs)		147 (0)
+Empirical Risk:			0 (0/398)
+L1 Loss:			0
+Object value:			-0.00149489
+CPU Time:			00:00:00
+
+
+Learning B-Y vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+    26 examples, cache size: 52
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 58 iterations
+
+Number of SVs (BSVs)		25 (0)
+Empirical Risk:			0 (0/26)
+L1 Loss:			0
+Object value:			-0.00107915
+CPU Time:			00:00:00
+
+
+Learning B-Y vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65488 examples, cache size: 584
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 238 iterations
+
+Number of SVs (BSVs)		125 (0)
+Empirical Risk:			0 (0/65488)
+L1 Loss:			0
+Object value:			-0.00372667
+CPU Time:			00:00:02
+
+
+Learning I-A vs I-B 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   398 examples, cache size: 796
+................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 804 iterations
+
+Number of SVs (BSVs)		194 (0)
+Empirical Risk:			0 (0/398)
+L1 Loss:			0
+Object value:			-0.0088781
+CPU Time:			00:00:00
+
+
+Learning I-A vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   769 examples, cache size: 1450
+....................   1000    769  1450 0.0015  88.4%  88.4%
+
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1047 iterations
+
+Number of SVs (BSVs)		229 (0)
+Empirical Risk:			0 (0/769)
+L1 Loss:			0
+Object value:			-0.0124343
+CPU Time:			00:00:00
+
+
+Learning I-A vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1418 examples, cache size: 1787
+....................   1000   1418  1787 0.0029  82.7%  82.7%
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1432 iterations
+
+Number of SVs (BSVs)		344 (0)
+Empirical Risk:			0 (0/1418)
+L1 Loss:			0
+Object value:			-0.011172
+CPU Time:			00:00:00
+
+
+Learning I-A vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   461 examples, cache size: 922
+................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 847 iterations
+
+Number of SVs (BSVs)		225 (0)
+Empirical Risk:			0 (0/461)
+L1 Loss:			0
+Object value:			-0.00656276
+CPU Time:			00:00:00
+
+
+Learning I-A vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+    89 examples, cache size: 178
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 211 iterations
+
+Number of SVs (BSVs)		58 (0)
+Empirical Risk:			0 (0/89)
+L1 Loss:			0
+Object value:			-0.00215207
+CPU Time:			00:00:00
+
+
+Learning I-A vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65551 examples, cache size: 582
+....................   1000  65551   582 0.0015  81.9%  81.8%
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 1080 iterations
+
+Number of SVs (BSVs)		357 (0)
+Empirical Risk:			0 (0/65551)
+L1 Loss:			0
+Object value:			-0.00994962
+CPU Time:			00:00:06
+
+
+Learning I-B vs I-C 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1019 examples, cache size: 1533
+....................   1000   1019  1533 0.0177  75.0%  75.0%
+....................   2000   1019  1533 0.0039  98.0%  86.5%
+...............
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2783 iterations
+
+Number of SVs (BSVs)		546 (0)
+Empirical Risk:			0 (0/1019)
+L1 Loss:			0
+Object value:			-0.0227588
+CPU Time:			00:00:00
+
+
+Learning I-B vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1668 examples, cache size: 1982
+....................   1000   1668  1982 0.0298  70.9%  70.9%
+....................   2000   1668  1982 0.0131  94.2%  82.5%
+....................   3000   1668  1982 0.0057  97.5%  87.5%
+....................   4000   1668  1982 0.0037  99.0%  90.4%
+....................   5000   1668  1982 0.0019  99.2%  92.1%
+....................   6000   1668  1982 0.0013  99.6%  93.4%
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 6222 iterations
+
+Number of SVs (BSVs)		779 (0)
+Empirical Risk:			0 (0/1668)
+L1 Loss:			0
+Object value:			-0.0268348
+CPU Time:			00:00:00
+
+
+Learning I-B vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   711 examples, cache size: 1422
+....................   1000    711  1422 0.0145  77.9%  77.8%
+....................   2000    711  1422 0.0025  99.1%  88.5%
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2405 iterations
+
+Number of SVs (BSVs)		456 (0)
+Empirical Risk:			0 (0/711)
+L1 Loss:			0
+Object value:			-0.0204722
+CPU Time:			00:00:00
+
+
+Learning I-B vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   339 examples, cache size: 678
+.....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 295 iterations
+
+Number of SVs (BSVs)		103 (0)
+Empirical Risk:			0 (0/339)
+L1 Loss:			0
+Object value:			-0.00323166
+CPU Time:			00:00:00
+
+
+Learning I-B vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65801 examples, cache size: 580
+....................   1000  65801   580 0.0124  68.7%  68.7%
+....................   2000  65801   580 0.0024  88.8%  78.8%
+.........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2477 iterations
+
+Number of SVs (BSVs)		680 (0)
+Empirical Risk:			0 (0/65801)
+L1 Loss:			0
+Object value:			-0.0181231
+CPU Time:			00:00:17
+
+
+Learning I-C vs I-F 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  2039 examples, cache size: 2296
+....................   1000   2039  2296 0.0429  62.0%  62.0%
+....................   2000   2039  2296 0.0181  92.0%  77.0%
+....................   3000   2039  2296 0.0065  96.2%  83.4%
+....................   4000   2039  2296 0.0042  98.1%  87.0%
+....................   5000   2039  2296 0.0021  99.5%  89.5%
+....................   6000   2039  2296 0.0014  99.5%  91.2%
+....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 6236 iterations
+
+Number of SVs (BSVs)		1028 (0)
+Empirical Risk:			0 (0/2039)
+L1 Loss:			0
+Object value:			-0.0296609
+CPU Time:			00:00:00
+
+
+Learning I-C vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1082 examples, cache size: 1566
+....................   1000   1082  1566 0.0234  74.1%  74.1%
+....................   2000   1082  1566 0.0053  98.0%  86.0%
+...................
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2966 iterations
+
+Number of SVs (BSVs)		560 (0)
+Empirical Risk:			0 (0/1082)
+L1 Loss:			0
+Object value:			-0.0246614
+CPU Time:			00:00:00
+
+
+Learning I-C vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   710 examples, cache size: 1420
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 375 iterations
+
+Number of SVs (BSVs)		137 (0)
+Empirical Risk:			0 (0/710)
+L1 Loss:			0
+Object value:			-0.00544588
+CPU Time:			00:00:00
+
+
+Learning I-C vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 66172 examples, cache size: 577
+....................   1000  66172   577 0.0247  58.9%  58.9%
+....................   2000  66172   577 0.0052  68.0%  63.5%
+....................   3000  66000   577 0.0018  65.5%  64.2%
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 3402 iterations
+
+Number of SVs (BSVs)		911 (0)
+Empirical Risk:			0 (0/66172)
+L1 Loss:			0
+Object value:			-0.0227339
+CPU Time:			00:00:44
+
+
+Learning I-F vs I-M 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1731 examples, cache size: 2033
+....................   1000   1731  2033 0.0329  72.4%  72.3%
+....................   2000   1731  2033 0.0127  95.6%  84.0%
+....................   3000   1731  2033 0.0068  98.4%  88.8%
+....................   4000   1731  2033 0.0038  99.2%  91.4%
+....................   5000   1731  2033 0.0026  99.7%  93.0%
+....................   6000   1731  2033 0.0015  99.7%  94.1%
+.
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 6083 iterations
+
+Number of SVs (BSVs)		680 (0)
+Empirical Risk:			0 (0/1731)
+L1 Loss:			0
+Object value:			-0.0273581
+CPU Time:			00:00:00
+
+
+Learning I-F vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+  1359 examples, cache size: 1744
+........
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 447 iterations
+
+Number of SVs (BSVs)		163 (0)
+Empirical Risk:			0 (0/1359)
+L1 Loss:			0
+Object value:			-0.00501912
+CPU Time:			00:00:00
+
+
+Learning I-F vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 66821 examples, cache size: 571
+....................   1000  66821   571 0.0310  47.6%  47.6%
+....................   2000  66821   571 0.0085  52.6%  50.1%
+....................   3000  66517   571 0.0034  50.5%  50.2%
+....................   4000  59605   629 0.0016  49.2%  50.0%
+.....
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 4296 iterations
+
+Number of SVs (BSVs)		1225 (0)
+Empirical Risk:			0 (0/66821)
+L1 Loss:			0
+Object value:			-0.0227043
+CPU Time:			00:01:17
+
+
+Learning I-M vs I-Y 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+   402 examples, cache size: 804
+.......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 357 iterations
+
+Number of SVs (BSVs)		113 (0)
+Empirical Risk:			0 (0/402)
+L1 Loss:			0
+Object value:			-0.00551896
+CPU Time:			00:00:00
+
+
+Learning I-M vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65864 examples, cache size: 580
+....................   1000  65864   580 0.0154  67.2%  67.2%
+....................   2000  65864   580 0.0018  84.1%  75.7%
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 2332 iterations
+
+Number of SVs (BSVs)		715 (0)
+Empirical Risk:			0 (0/65864)
+L1 Loss:			0
+Object value:			-0.0166007
+CPU Time:			00:00:20
+
+
+Learning I-Y vs O 0 (/home/is/daiki-ku/opt/bin/svm_learn -t 1 -d 2 -c 1 ./result/train_svm_8.svmdata.41816 ./result/train_svm_8.svmmodel.41816)
+TinySVM - tiny SVM package
+Copyright (C) 2000-2002 Taku Kudo, All rights reserved.
+
+ 65492 examples, cache size: 584
+......
+Checking optimality of inactive variables  re-activated: 0
+
+Done! 339 iterations
+
+Number of SVs (BSVs)		166 (0)
+Empirical Risk:			0 (0/65492)
+L1 Loss:			0
+Object value:			-0.00484261
+CPU Time:			00:00:03
