@@ -1,7 +1,8 @@
 # coding: utf-8
 
 import xml.etree.ElementTree as ET
-import glob, sys, re, dill, argparse, collections, random
+import glob, sys, re, argparse, collections, random
+import dill as pickle
 import pandas as pd
 import numpy as np
 import cupy
@@ -26,11 +27,11 @@ def get_arg():
 #####################
 def save(fname, cont):
 	with open(fname, mode='wb') as f:
-		dill.dump(cont, f)
+		pickle.dump(cont, f)
 
 def load(fname):
 	with open(fname, mode='rb') as f:
-		return dill.load(f)
+		return pickle.load(f)
 
 def mark_feature(n_pre, n_mwe, n_post):
 	mark = []
@@ -137,7 +138,7 @@ def trainw2v(modelpath, dim):
 def embedding(vocab_inv, w2vmodel, dim):
 	# embedIDの初期重み作成
 	initialW = []
-	for i in range(0, len(vocab)):
+	for i in range(0, len(vocab_inv)):
 		word = vocab_inv[i]		# wid=1から順にword取得
 		try:
 			w2vec = w2vmodel[word]
@@ -152,11 +153,8 @@ def embedding(vocab_inv, w2vmodel, dim):
 # 	用例DBのXMLパーズ
 #####################
 # def parseDB(datapath, vocab, fvocab, getsize):
-def parseDB(datapath, getsize, mwelist, i):
-	vocab = collections.defaultdict(lambda: len(vocab))	# 語彙用
-	fvocab = collections.defaultdict(lambda: len(fvocab)) # feature用
+def parseDB(datapath, getsize, mwelist, w2vmodel, i, ambflag, vocab, fvocab):
 	sidhash = {}
-
 	for file in glob.iglob(datapath + '*.xml'):
 		tree = ET.parse(file)
 		root = tree.getroot()
@@ -178,30 +176,47 @@ def parseDB(datapath, getsize, mwelist, i):
 					else:
 						label = 0
 					sidhash[sentid] = {'sent':sent, 'feat':feature, 'mark': mark, 'label':label}
-	if i != 'all':
-		train_sid, test_sid = clustSidSplit(sidhash)
-		x_train, y_train, vocab, fvocab = makeTrainTest(train_sid, sidhash, vocab, fvocab)
-		x_test, y_test, vocab, fvocab = makeTrainTest(test_sid, sidhash, vocab, fvocab)
 
-	else:
+	get_wid(vocab, ['unk'])		# 未知語用の語彙用意
+	get_wid(fvocab, ['unk'])	# 未知語用の語彙用意
+
+	if i == 'all':
 		test_sid = []
 		# 各クラスタのテストセットの文id抽出
-		for i in range(1, n_cluster+1):
-			test_sid.append(load('./result/test_sid_'+str(i)+'.pickle'))	
+		for i in range(1, args.n_cluster+1):
+			if ambflag == 0:
+				test_sid += load('./result/test_sid_'+str(i)+'_noamb.pickle')
+			elif ambflag == 1:
+				test_sid += load('./result/test_sid_'+str(i)+'_amb.pickle')
 
 		train_sid = list(set(sidhash.keys()) - set(test_sid))
 		x_train, y_train, vocab, fvocab = makeTrainTest(train_sid, sidhash, vocab, fvocab)
 		x_test, y_test, vocab, fvocab = makeTrainTest(test_sid, sidhash, vocab, fvocab)
 
-	save('./result/vocab_'+str(i)+'.pickle', vocab)
-	save('./result/fvocab_'+str(i)+'.pickle', fvocab)
-	save('./result/x_train_'+str(i)+'.pickle', x_train)
-	save('./result/x_test_'+str(i)+'.pickle', x_test)
-	save('./result/y_train_'+str(i)+'.pickle', y_train)
-	save('./result/y_test_'+str(i)+'.pickle', y_test)
-	save('./result/test_sid_'+str(i)+'.pickle', test_sid)
+	else:
+		train_sid, test_sid = clustSidSplit(sidhash)
+		x_train, y_train, vocab, fvocab = makeTrainTest(train_sid, sidhash, vocab, fvocab)
+		x_test, y_test, vocab, fvocab = makeTrainTest(test_sid, sidhash, vocab, fvocab)
 
-	return vocab
+	vocab_inv = {v: k for k, v in vocab.items()}
+	initialW = embedding(vocab_inv, w2vmodel, 100)
+
+	if ambflag == 0:
+		save('./result/x_train_'+str(i)+'_noamb.pickle', x_train)
+		save('./result/x_test_'+str(i)+'_noamb.pickle', x_test)
+		save('./result/y_train_'+str(i)+'_noamb.pickle', y_train)
+		save('./result/y_test_'+str(i)+'_noamb.pickle', y_test)
+		save('./result/test_sid_'+str(i)+'_noamb.pickle', test_sid)
+		save('./result/embedding_'+str(i)+'_noamb.pickle', initialW)
+
+	elif ambflag == 1:
+		save('./result/x_train_'+str(i)+'_amb.pickle', x_train)
+		save('./result/x_test_'+str(i)+'_amb.pickle', x_test)
+		save('./result/y_train_'+str(i)+'_amb.pickle', y_train)
+		save('./result/y_test_'+str(i)+'_amb.pickle', y_test)
+		save('./result/test_sid_'+str(i)+'_amb.pickle', test_sid)
+		save('./result/embedding_'+str(i)+'_amb.pickle', initialW)
+	return vocab, fvocab
 
 def makeTrainTest(sidlist, sidhash, vocab, fvocab):
 	sentlist, featlist, marklist, x, y = [], [], [], [], []
@@ -211,8 +226,6 @@ def makeTrainTest(sidlist, sidhash, vocab, fvocab):
 		marklist.append(sidhash[sentid]['mark'])
 		y.append(sidhash[sentid]['label'])
 
-	get_wid(vocab, ['unk'])		# 未知語用の語彙用意
-	get_wid(fvocab, ['unk'])	# 未知語用の語彙用意
 
 	sentlist = padding(sentlist, getMaxlen(featlist))
 	featlist = padding(featlist, getMaxlen(featlist))
@@ -220,7 +233,7 @@ def makeTrainTest(sidlist, sidhash, vocab, fvocab):
 	for sent, feat, mark in zip(sentlist, featlist, marklist):
 		x.append([sent, feat, mark])
 
-	 return cupy.array(x, dtype=cupy.int32), cupy.array(y, dtype=cupy.int32), vocab, fvocab
+	return cupy.array(x, dtype=cupy.int32), cupy.array(y, dtype=cupy.int32), vocab, fvocab
 
 def clustSidSplit(sidhash):
 	return train_test_split(list(sidhash.keys()), test_size=0.1, random_state=53)
@@ -240,31 +253,76 @@ if __name__ == '__main__':
 	print('getsize:', args.size)
 	print('n_cluster:', args.n_cluster)
 	xp = cupy
+	vocab = collections.defaultdict(lambda: len(vocab))	# 語彙用
+	fvocab = collections.defaultdict(lambda: len(fvocab)) # feature用
+
 
 	datapath = '../../../data/MUST-dist-1.0/data/'
 	mpath = '../nn/model/wiki_vector'+str(args.dim)+'.model'
 	from gensim.models import word2vec
 	w2vmodel = word2vec.Word2Vec.load(mpath)	# load
-	amb_mwelist = load('../nn/tmp/mwelist.pickle')
 	# # # vocab['unk']: 未知語用の語彙
 
-	# # クラスタ毎に回す(1〜args.n_cluster)
+	########################################
+	# 曖昧性のあるMWEを対象に
+	########################################
+	ambflag = 1
+	amb_mwelist = load('../nn/tmp/mwelist.pickle')
 	for i in range(1, args.n_cluster+1):
+		########################################
+		# # クラスタ毎に回す(1〜args.n_cluster)
 		print(i)
 		clust_mwelist = load('./result/clusterlist_'+str(i)+'.pickle')
+		# 曖昧性のあるMWEを対象に
 		mwelist = extractAmb(amb_mwelist, clust_mwelist)
-		# print(len(clust_mwelist), len(amb_mwelist), len(mwelist))
-		vocab = parseDB(datapath, args.size, mwelist, i)
-		vocab_inv = {v: k for k, v in vocab.items()}
-		initialW = embedding(vocab_inv, w2vmodel, args.dim)
-		save('./result/embedding_size'+str(args.dim)+'_'+str(i)+'.pickle', initialW)
+		vocab ,fvocab = parseDB(datapath, args.size, mwelist, w2vmodel, i, ambflag, vocab, fvocab)
+		if ambflag == 0:
+			save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
+			save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
+		elif ambflag == 1:
+			save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
+			save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
 
-	# all
-	mwelist = amb_mwelist
-	vocab = parseDB(datapath, args.size, mwelist, 'all')
-	vocab_inv = {v: k for k, v in vocab.items()}
-	initialW = embedding(vocab_inv, w2vmodel, args.dim)
-	save('./result/embedding_size'+str(args.dim)+'_all.pickle', initialW)
+	########################################
+	# 曖昧性のあるMWE, クラスタリングなし
+	mwelist, i = amb_mwelist, 'all'
+	vocab ,fvocab = parseDB(datapath, args.size, mwelist, w2vmodel, i, ambflag, vocab, fvocab)
+	if ambflag == 0:
+		save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
+		save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
+	elif ambflag == 1:
+		save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
+		save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
+
+	########################################
+	# 全MWEを対象に
+	########################################
+	ambflag = 0
+	allmwelist = load('../nn/result/mwelist.pickle')
+	for i in range(1, args.n_cluster+1):
+		########################################
+		# クラスタ毎に回す(1〜args.n_cluster)
+		print(i)
+		clust_mwelist = load('./result/clusterlist_'+str(i)+'.pickle')
+		vocab ,fvocab = parseDB(datapath, args.size, clust_mwelist, w2vmodel, i, ambflag, vocab, fvocab)
+		if ambflag == 0:
+			save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
+			save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
+		elif ambflag == 1:
+			save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
+			save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
+
+	########################################
+	# 曖昧性のあるMWE, クラスタリングなし
+	mwelist, i = allmwelist, 'all'
+	vocab ,fvocab = parseDB(datapath, args.size, mwelist, w2vmodel, i, ambflag, vocab, fvocab)
+	if ambflag == 0:
+		save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
+		save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
+	elif ambflag == 1:
+		save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
+		save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
+
 
 
 
