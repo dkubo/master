@@ -276,23 +276,15 @@ if __name__ == '__main__':
 		# 曖昧性のあるMWEを対象に
 		mwelist = extractAmb(amb_mwelist, clust_mwelist)
 		vocab ,fvocab = parseDB(datapath, args.size, mwelist, w2vmodel, i, ambflag, vocab, fvocab)
-		if ambflag == 0:
-			save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
-			save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
-		elif ambflag == 1:
-			save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
-			save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
+		save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
+		save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
 
 	########################################
 	# 曖昧性のあるMWE, クラスタリングなし
 	mwelist, i = amb_mwelist, 'all'
 	vocab ,fvocab = parseDB(datapath, args.size, mwelist, w2vmodel, i, ambflag, vocab, fvocab)
-	if ambflag == 0:
-		save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
-		save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
-	elif ambflag == 1:
-		save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
-		save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
+	save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
+	save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
 
 	########################################
 	# 全MWEを対象に
@@ -305,24 +297,15 @@ if __name__ == '__main__':
 		print(i)
 		clust_mwelist = load('./result/clusterlist_'+str(i)+'.pickle')
 		vocab ,fvocab = parseDB(datapath, args.size, clust_mwelist, w2vmodel, i, ambflag, vocab, fvocab)
-		if ambflag == 0:
-			save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
-			save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
-		elif ambflag == 1:
-			save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
-			save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
+		save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
+		save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
 
 	########################################
 	# 曖昧性のあるMWE, クラスタリングなし
 	mwelist, i = allmwelist, 'all'
 	vocab ,fvocab = parseDB(datapath, args.size, mwelist, w2vmodel, i, ambflag, vocab, fvocab)
-	if ambflag == 0:
-		save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
-		save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
-	elif ambflag == 1:
-		save('./result/vocab_'+str(i)+'_amb.pickle', vocab)
-		save('./result/fvocab_'+str(i)+'_amb.pickle', fvocab)
-
+	save('./result/vocab_'+str(i)+'_noamb.pickle', vocab)
+	save('./result/fvocab_'+str(i)+'_noamb.pickle', fvocab)
 
 
 
