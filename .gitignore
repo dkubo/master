@@ -3,3 +3,4 @@ data/
 tmp/
 anno_src/result/
 anno_src/bccwj/
+wv_cluster/dict/result/_
