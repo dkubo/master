@@ -96,16 +96,14 @@ if __name__ == '__main__':
 			span, getsize = [start, start+mwelen], 2
 			sent, feature, mark = morphParse([left, mwe, right], span, getsize)
 			if len(sent) != 0:
-				# labelhash[label] += 1
 				if label in [1, 3]:
 					label = 1
 				elif label == 2:
 					label = 0
 				featmaxlen = max(featmaxlen, len(feature))
 				sidhash[(bccwj_id, sentid)] = {'sent':sent, 'feat':feature, 'mark': mark, 'label':label}
-				# sidhash[(linenum,bccwj_id, sentid)] = {'sent':sent, 'feat':feature, 'mark': mark, 'label':label}
 
-	for i in range(1, 5):
+	for i in [1, 2, 3, 4, 'all']:
 		vocab = load('../wv_cluster/result/vocab_'+str(i)+'_amb.pickle')
 		fvocab = load('../wv_cluster/result/fvocab_'+str(i)+'_amb.pickle')
 		x_test, y_test = makeXy(sidhash, vocab, fvocab, featmaxlen)
